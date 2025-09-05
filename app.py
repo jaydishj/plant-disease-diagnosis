@@ -12,6 +12,23 @@ st.set_page_config(
 )
 
 st.title("🌿 Plant Disease Diagnosis App")
+st.markdown("""
+### ℹ️ About Plant Disease Diagnosis
+Plant disease diagnosis is the process of identifying the type of disease affecting a plant by analyzing **visible symptoms** on its leaves, stems, or fruits.  
+Traditionally, this required expert knowledge from farmers or plant pathologists.  
+
+With **AI and Machine Learning**, we can now train models using thousands of plant images to automatically detect:
+- 🌿 Whether a plant is healthy or diseased  
+- 🦠 The specific disease (fungal, bacterial, viral, or pest-related)  
+- 🧪 Possible nutrient deficiencies that mimic disease symptoms  
+
+This app uses a **Convolutional Neural Network (CNN)** trained on plant leaf images to predict the health condition of crops like **Tomato, Potato, and Bell Pepper**.  
+It helps farmers and gardeners to:  
+- ✅ Get faster disease detection  
+- ✅ Reduce crop losses  
+- ✅ Take timely action with treatments  
+""")
+
 st.write("Upload a leaf image and let the AI diagnose its health status.")
 
 # -------------- Load your model --------------
