@@ -1,31 +1,41 @@
+
 import streamlit as st
 
-# Custom CSS for forest background + text + code
-import streamlit as st
-
-# Custom CSS for forest background
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-image: url("https://images.unsplash.com/photo-1508780709619-79562169bc64"); /* lighter forest */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
 }
 
-[data-testid="stHeader"] {
+[data-testid="stHeader"], [data-testid="stToolbar"] {
     background: rgba(0,0,0,0);
 }
 
 [data-testid="stSidebar"] {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(0, 0, 0, 0.5); /* dark transparent sidebar */
+    color: white;
+}
+
+html, body, [class*="css"] {
+    color: white !important;
+    font-weight: bold;
+}
+
+code, pre {
+    color: #00FF7F !important;  /* spring green */
+    background-color: rgba(0,0,0,0.7) !important;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
 }
 </style>
 """
 
 st.markdown(page_bg, unsafe_allow_html=True)
-
-
 
 
 import streamlit as st
