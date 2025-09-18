@@ -1,10 +1,10 @@
 import streamlit as st
 
-# Custom CSS for background
+# Custom CSS for forest background
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://unsplash.com/photos/aerial-view-of-a-dirt-road-through-a-dense-forest-4PeamaB-7ok");
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,11 @@ page_bg = """
 </style>
 """
 
-st.markdown(page_bg, unsafe_allow_html=True)import streamlit as st
+st.markdown(page_bg, unsafe_allow_html=True)
+
+
+
+import streamlit as st
 import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
