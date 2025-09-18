@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Custom CSS for forest background
+# Custom CSS for forest background + text + code
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
@@ -10,17 +10,36 @@ page_bg = """
     background-repeat: no-repeat;
 }
 
+/* Make all text white and bold */
+html, body, [class*="css"]  {
+    color: white;
+    font-weight: bold;
+    font-family: "Consolas", sans-serif;
+}
+
+/* Code blocks (st.code, st.markdown with ```python) */
+code, pre {
+    color: #00FF00 !important;   /* neon green text */
+    background-color: #000000 !important; /* black bg */
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 5px;
+}
+
 [data-testid="stHeader"] {
     background: rgba(0,0,0,0);
 }
 
 [data-testid="stSidebar"] {
     background-color: rgba(255,255,255,0.6);
+    color: black;
+    font-weight: normal;
 }
 </style>
 """
 
 st.markdown(page_bg, unsafe_allow_html=True)
+
 
 
 
